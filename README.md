@@ -10,5 +10,8 @@ Another key aspect to our robot is the method we plan to attach everything toget
 
 Lastly, we plan to make the facial expressions on top of our robot body by sculpting them with paper-mache (as shown in 'Sketch #2'). 
 
+_Sketch #2_ 
 ![Sketch #2](https://github.com/ryanwu1111/Performing-Robots-Fall-23/assets/71023642/dba77cbf-49a0-45c8-a8fa-9fd5d0402b01)
+
+_Sketch #1_ 
 ![Sketch #1](https://github.com/ryanwu1111/Performing-Robots-Fall-23/assets/71023642/9803dfab-65c6-417a-95b7-bcc9e928daf8)
