@@ -35,3 +35,13 @@ Personally, even though I did learn some soldering techniques during my study aw
 After we were done with the soldering, we moved on and drilled holes for the motor wires to be put through onto the other side as well as holes for the battery pack to be strapped securely. We also decided to not hot glue the Arduino board and instead drilled holes onto the board as we saw that there were actually alread holes on it and secured it with screws. Lastly, we strapped the battery pack in a diagonal manner and fit all the motor wires through the holes onto the other side of the base.  
 
 ![IMG_0672](https://github.com/ryanwu1111/Performing-Robots-Fall-23/assets/71023642/7dec6753-b9b0-4a0d-ab5b-f0130b098dbf)
+
+
+## _My Thoughts on Chapter 7: Machines/Mechanicals_ (09/18)
+After reading the chapter, what caught my attention was Salter's exploration of the limitless possibilities regarding human-machine collaboration in the performance art world. 
+
+This specific aspect of the chapter stood out to me mainly because it delves into the idea that technology or robots (in relation to our class),rather than it potentially completely replacing human performers, can actually serve as a creative 'partner', or you may also say, performing "hand in hand" with one another. This is very interesting because our very own major is perhaps the most obvious and biggest example that showcases how arts in general, not just performative arts, can intertwine with robots or technology. 
+
+This idea challenges the old ideology that technology or robots were always going to be mere tools for humans, but as technology advanced and robots started “thinking”, it revealed the limitless possibilities of robots and performing arts combining together. 
+
+However, this also raises other underlying questions about the nature of agency, control, and the ever-evolving technology or robotics of how these “machines” could potentially shape the future of live performance arts. Will there ever be a world where humans will start to rely on robots for artistic ideas, just like how we are slowly relying more on ChatGPT or other AI tools?  
