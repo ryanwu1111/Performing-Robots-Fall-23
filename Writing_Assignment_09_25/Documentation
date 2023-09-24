@@ -1,13 +1,29 @@
 ** Our Story Idea ** 
-For Andres & my writing assignment, we decided to make our story about a fictional world where a man has magically been transormed into a machine with only four wheels and a base, completely losing all of his humanistic functions and parts such as his arms, limbs, heart, and even his brain. However, despite being transformed into a heartless, brainless machine, his love for his wife still burns brightly within him. Even without his legs, arms, or a mouth to show his love for his wife, he still manages to find a way to express his love for his wife. 
-This method is through spelling out the words "I love you" with Morse code by making the sounds with the mechanical parts that he only has on him. We also decided to have our robot repeatedly play the morse code for "I love you" in order to express this feeling of even though he may have lost his body and mind, the only thing that will always be left in him is his love for his wife. Lastly, we decided to make our robot only play the morse code for "I love" without the "you" to enhance the reality that he is just a robot in the end and all he can do is the same thing over and over again. 
+For Andres & my writing assignment, we decided to make our story about a fictional world where a man has magically been transormed into 
+a machine with only four wheels and a base, completely losing all of his humanistic functions and parts such as his arms, limbs, heart, 
+and even his brain. However, despite being transformed into a heartless, brainless machine, his love for his wife still burns brightly 
+within him. Even without his legs, arms, or a mouth to show his love for his wife, he still manages to find a way to express his love 
+for his wife. 
+This method is through spelling out the words "I love you" with Morse code by making the sounds with the mechanical parts that he only 
+has on him. We also decided to have our robot repeatedly play the morse code for "I love you" in order to express this feeling of even 
+though he may have lost his body and mind, the only thing that will always be left in him is his love for his wife. Lastly, we decided 
+to make our robot only play the morse code for "I love" without the "you" to enhance the reality that he is just a robot in the end and 
+all he can do is the same thing over and over again. 
 
 ** First Step ** 
-We started by researching what the Morse code was for "I love you" and we found one that showed the beats and rhythm, so it will be easier for us to replicate them with our robot. 
+We started by researching what the Morse code was for "I love you" and we found one that showed the beats and rhythm, so it will be 
+easier for us to replicate them with our robot. 
 
 ** Second Step ** 
-After we found a reference for our Morse code, we encountered a minor issue with trying to figure out which parts of our code was controlling which wheel and making it move backwards or forwards. We quickly fixed this issue by testing our code and marking on our base on which side was going fowards and backwards and which wheel was the left and right. 
+After we found a reference for our Morse code, we encountered a minor issue with trying to figure out which parts of our code was 
+controlling which wheel and making it move backwards or forwards. We quickly fixed this issue by testing our code and marking on our 
+base on which side was going fowards and backwards and which wheel was the left and right. 
 
 ** Third Step **
-Afterwards, we just kept on doing trial and error and trying to figure out how we were going to replicate the same sounds as the morse code. We figured out how to make the sounds with the clicking sounds of the wheels, then we just kept on trying with different durations to get the rhythm and beats correct. This part was the most difficult for us as we would have no way of knowing how it would actually sound like unless we uploaded the code and ran it every time. We had to constantly keep in mind of each sounds that the robot would make if we stopped or moved in a certain direction. 
+Afterwards, we just kept on doing trial and error and trying to figure out how we were going to replicate the same sounds as the morse 
+code. We figured out how to make the sounds with the clicking sounds of the wheels, then we just kept on trying with different 
+durations to get the rhythm and beats correct. This part was the most difficult for us as we would have no way of knowing how it 
+would actually sound like unless we uploaded the code and ran it every time. We had to constantly keep in mind of each sounds that 
+the robot would make if we stopped or moved in a certain direction. 
+
 But in the end, we eventually manage to make our robot produce the sounds with the similar beat and rhythm to the morse code. 
