@@ -22,10 +22,11 @@
 #define SERIAL_PORT_SPEED 9600
 #define RC_NUM_CHANNELS  4
 
-#define RC_CH1  2
-#define RC_CH2  3
-#define RC_CH3  4
-#define RC_CH4  5
+//DON"T CHANGE THIS 
+#define RC_CH1  0
+#define RC_CH2  1
+#define RC_CH3  2
+#define RC_CH4  3
 
 #define RC_CH1_PIN  2
 #define RC_CH2_PIN  3
