@@ -1,1 +1,11 @@
 MY JOURNAL PROCESS FOR GETTING TO CONTROL OUR ROBOT WITH RC REMOTE CONTROL
+
+#Setting Up Stuff#
+When I first started setting up our code to make sure that we could still see the values for the four channels from the RC, I was confused by the errors popping up as I remember it was all fine last week. I quickly resolved this by changing the board from mega (which we used for the music shield) to uno. 
+
+#Coding#
+The biggest difficulty we encountered was figuring out the coding as we first thought that if we just copy and pasted the code from Michael's github page, it would easily work. However, as expected, it didn't work. 
+
+We realized that we were too naive and actually needed to code the reverse, forward and turning functions as it wasn't provided in Michael's example code. After writing out the functions for moving forward, backwards and turning, we tried uploading the code and the robot was turning its wheels by itself without the control from the RC. 
+
+Therefore, we decided to look back at the example code and try to figure out what was wrong. We later realized that the values set to trigger the forward, backwards and turning functions were not altered to our RC's values. So, after changing the values within the if functions, we got it to work in the end! 
