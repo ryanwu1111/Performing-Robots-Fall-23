@@ -1,5 +1,0 @@
-*Finish soldering the wires between the Hobby RC shield and the H-bridge.*
-We encountered some issues of soldering the wires between the wires and the pinheads as the solder wasn't sticking onto the wires and pinheads exactly the way we wanted it to. But we eventually overcame this by taking our time and doing it over and over again until we got it. 
-
-*Test the Music Maker Shield and get it to play audio.*
-There were somoe coding issues at first when we first uploaded the code but then we went back to the instructions and realized that the issue was simply commenting out the first few lines to use the shield example instead. Another little problem was just choosing the right boards and port in Arduino. 
