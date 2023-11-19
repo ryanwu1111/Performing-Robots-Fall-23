@@ -1,0 +1,7 @@
+Today, I am so glad to say that Andres and I are finished with all the wiring for the servomotors as well as the Arduino Mega, Servo Shield and the Music Maker shield. We also made sure that both the Arduino Uno and Mega, H-Bridge, and the Marshall speaker were all working. 
+
+The only tricky part we encountered and seeked advice from the Professor was how to provide provide power from one head of the battery to both the Arduino UNO and Mega as they both shared the same power source. The Professor provided us with a simple solution: to simply connect the head to two wires (positive and negative) to another head that will be plugged into the battery. Simply enough, it worked!
+
+We concluded today by finishing wiring up the servomotors, Arduino UNO and Mega, and the Servo shield and Music Maker shield. We also made sure to organize the wires in a way that it doesn't get tangled on the ground by the wheels when it's moving around. 
+
+Going foward, Andres and I are planning to double check that we can drive the robot around using the RC and starting to work on the Neopixels by connecting them togther and attaching them onto the head of our robot. 

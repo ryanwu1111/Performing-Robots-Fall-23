@@ -1,0 +1,5 @@
+For today's class, Professor went over with us the overview of how to connect all the power wires for the servomotor, the neopixels, the speaker, and more importantly how to connec them all to the Arduino Mega, Servo shield, and the music maker shield. Personally, as a person with zero background in working with physical wiring and anything physical in general, it was difficult for me to understand. But eventually, after going back and working out the logic behind why each thing was connected to another, I gradually figured out the logic behind the wirings on my own. 
+
+As for the robot, we finally finished building the two bases of the body as well as the two servomotors and Lazy Susan and tested them out to make sure that they were both spinning correctly without any disturbances such as the weird sound that it was making. We were able to figure out the problem for the weird sound with Professor's help. We also finished securing the speaker for the music/talking for our robot. 
+
+We concluded our day with these tasks. 
