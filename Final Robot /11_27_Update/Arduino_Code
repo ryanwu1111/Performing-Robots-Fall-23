@@ -76,8 +76,8 @@ RF24 radio(NRF_CE_PIN, NRF_CSN_PIN);  // CE, CSN
 // Akhat, Yunho:  Channel 70, addr = 0xC3
 // Aakif, Marta: Channel 80, addr = 0xCC
 // Yerk, Hamad: Channel 90, addr = 0x33
-const byte CUSTOM_ADDRESS_BYTE = 0x73;             // change as per the above assignment
-const int CUSTOM_CHANNEL_NUMBER = 40;  // change as per the above assignment
+const byte CUSTOM_ADDRESS_BYTE = 73;  // change as per the above assignment
+const int CUSTOM_CHANNEL_NUMBER = 40;   // change as per the above assignment
 
 // Do not make changes here
 const byte xmtrAddress[] = { CUSTOM_ADDRESS_BYTE, CUSTOM_ADDRESS_BYTE, 0xC7, 0xE6, 0xCC };
@@ -297,80 +297,80 @@ void clearData() {
 // End of transmitter code
 
 /*
-  // Receiver Code
+// Receiver Code
 
-  // Additional libraries for music maker shield
-  #include <Adafruit_VS1053.h>
-  #include <SD.h>
+// Additional libraries for music maker shield
+#include <Adafruit_VS1053.h>
+#include <SD.h>
 
-  // Servo library
-  #include <Servo.h>
+// Servo library
+#include <Servo.h>
 
-  // Additional libraries for graphics on the Neo Pixel Matrix
-  #include <Adafruit_NeoPixel.h>
-  #include <Adafruit_GFX.h>
-  #include <Adafruit_NeoMatrix.h>
-  #ifndef PSTR
-  #define PSTR // Make Arduino Due happy
-  #endif
+// Additional libraries for graphics on the Neo Pixel Matrix
+#include <Adafruit_NeoPixel.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_NeoMatrix.h>
+#ifndef PSTR
+#define PSTR  // Make Arduino Due happy
+#endif
 
-  // Additional pin usage for receiver
+// Additional pin usage for receiver
 
-  // Adafruit music maker shield
-  #define SHIELD_RESET -1  // VS1053 reset pin (unused!)
-  #define SHIELD_CS 7      // VS1053 chip select pin (output)
-  #define SHIELD_DCS 6     // VS1053 Data/command select pin (output)
-  #define CARDCS 4         // Card chip select pin
-  // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
-  #define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
-  Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
+// Adafruit music maker shield
+#define SHIELD_RESET -1  // VS1053 reset pin (unused!)
+#define SHIELD_CS 7      // VS1053 chip select pin (output)
+#define SHIELD_DCS 6     // VS1053 Data/command select pin (output)
+#define CARDCS 4         // Card chip select pin
+// DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
+#define DREQ 3  // VS1053 Data request, ideally an Interrupt pin
+Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
-  // Connectors for NeoPixels and Servo Motors are labeled
-  // M1 - M6 which is not very useful. Here are the pin
-  // assignments:
-  // M1 = 19
-  // M2 = 21
-  // M3 = 20
-  // M4 = 16
-  // M5 = 18
-  // M6 = 17
+// Connectors for NeoPixels and Servo Motors are labeled
+// M1 - M6 which is not very useful. Here are the pin
+// assignments:
+// M1 = 19
+// M2 = 21
+// M3 = 20
+// M4 = 16
+// M5 = 18
+// M6 = 17
 
-  // Servo motors
-  const int body_servo_pin = 18;
-  const int neck_servo_pin = 17;
+// Servo motors
+const int body_servo_pin = 18;
+const int neck_servo_pin = 17;
 
 
-  // Neopixel
-  // const int NEOPIXELPIN = 18;
-  const int NUMPIXELS = 64;
-  //#define NEOPIXELPIN 18
-  //#define NUMPIXELS 64  // change to fit
-  //Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
-  // Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
-  //                           NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
-  //                           NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
-  //                           NEO_GRB            + NEO_KHZ800);
+// Neopixel
+// const int NEOPIXELPIN = 18;
+const int NUMPIXELS = 64;
+//#define NEOPIXELPIN 18
+//#define NUMPIXELS 64  // change to fit
+//Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXELPIN, NEO_GRB + NEO_KHZ800);
+// Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(8, 8, NEOPIXELPIN,
+//                           NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
+//                           NEO_MATRIX_COLUMNS + NEO_MATRIX_PROGRESSIVE,
+//                           NEO_GRB            + NEO_KHZ800);
 
-  Servo body;  // change names to describe what's moving
-  Servo neck;
-  // Servo tail;
-  // Servo grabber;
-  // Servo disk;
+Servo body;  // change names to describe what's moving
+Servo neck;
+// Servo tail;
+// Servo grabber;
+// Servo disk;
 
-  // // change as per your robot
-  // const int NOSE_WRINKLE = 45;
-  // const int NOSE_TWEAK = 90;
-  // const int TAIL_ANGRY = 0;
-  // const int TAIL_HAPPY = 180;
-  // const int GRABBER_RELAX = 0;
-  // const int GRABBER_GRAB = 180;
+// // change as per your robot
+// const int NOSE_WRINKLE = 45;
+// const int NOSE_TWEAK = 90;
+// const int TAIL_ANGRY = 0;
+// const int TAIL_HAPPY = 180;
+// const int GRABBER_RELAX = 0;
+// const int GRABBER_GRAB = 180;
 
-  void setup() {
+void setup() {
   Serial.begin(9600);
   // printf_begin();
 
   // Set up all the attached hardware
-  setupMusicMakerShield();
+  // setupMusicMakerShield();
   setupServoMotors();
   // setupNeoPixels();
 
@@ -378,9 +378,9 @@ void clearData() {
 
   // Brief flash to show we're done with setup()
   // flashNeoPixels();
-  }
+}
 
-  void setupRF24() {
+void setupRF24() {
   setupRF24Common();
 
   // Set us as a receiver
@@ -389,9 +389,9 @@ void clearData() {
 
   // radio.printPrettyDetails();
   Serial.println(F("I am a receiver"));
-  }
+}
 
-  void setupMusicMakerShield() {
+void setupMusicMakerShield() {
   if (!musicPlayer.begin()) {  // initialise the music player
     Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
     while (1)
@@ -414,48 +414,48 @@ void clearData() {
   // If DREQ is on an interrupt pin (on uno, #2 or #3) we can do background
   // audio playing
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
-  }
+}
 
-  void setupServoMotors() {
+void setupServoMotors() {
   body.attach(body_servo_pin);
   neck.attach(neck_servo_pin);
   //align to center
   body.write(40);
   neck.write(0);
-  }
+}
 
-  // void setupNeoPixels() {
-  // //  pixels.begin();
-  // //  pixels.clear();
-  // //  pixels.show();
-  // matrix.begin();
-  // matrix.setTextWrap(false);
-  // matrix.setBrightness(40);
-  // matrix.setTextColor(matrix.Color(200, 30, 40));
-  // }
+// void setupNeoPixels() {
+// //  pixels.begin();
+// //  pixels.clear();
+// //  pixels.show();
+// matrix.begin();
+// matrix.setTextWrap(false);
+// matrix.setBrightness(40);
+// matrix.setTextColor(matrix.Color(200, 30, 40));
+// }
 
-  // void flashNeoPixels() {
+// void flashNeoPixels() {
 
-  // // Using the Matrix library
-  // matrix.fillScreen(matrix.Color(0, 255, 0));
-  // matrix.show();
-  // delay(500);
-  // matrix.fillScreen(0);
-  // matrix.show();
+// // Using the Matrix library
+// matrix.fillScreen(matrix.Color(0, 255, 0));
+// matrix.show();
+// delay(500);
+// matrix.fillScreen(0);
+// matrix.show();
 
-  //  // all on
-  //  for (int i = 0; i < NUMPIXELS; i++) {  // For each pixel...
-  //    pixels.setPixelColor(i, pixels.Color(0, 100, 0));
-  //  }
-  //  pixels.show();
-  //  delay(500);
-  //
-  //  // all off
-  //  pixels.clear();
-  //  pixels.show();
-  // }
+//  // all on
+//  for (int i = 0; i < NUMPIXELS; i++) {  // For each pixel...
+//    pixels.setPixelColor(i, pixels.Color(0, 100, 0));
+//  }
+//  pixels.show();
+//  delay(500);
+//
+//  // all off
+//  pixels.clear();
+//  pixels.show();
+// }
 
-  void loop() {
+void loop() {
   // If there is data, read it,
   // and do the needfull
   // Become a receiver
@@ -477,11 +477,12 @@ void clearData() {
         // matrix.show();
 
         //play music
-        musicPlayer.playFullFile("/track001.mp3");
-        Serial.println(F("Playing track 001"));
+        // musicPlayer.playFullFile("/track001.mp3");
+        // Serial.println(F("Playing track 001"));
         // Serial.println(state);
 
         //turn servomotor
+        Serial.println("Case 0 Received");
         body.write(60);
         delay(2000);
         break;
@@ -491,10 +492,11 @@ void clearData() {
         // matrix.show();
 
         //play music
-        musicPlayer.playFullFile("/track002.mp3");
-        Serial.println(F("Playing track 002"));
+        // musicPlayer.playFullFile("/track002.mp3");
+        // Serial.println(F("Playing track 002"));
 
         //turn servomotor
+        Serial.println("Case 1 Received");
         neck.write(30);
         delay(2000);
         break;
@@ -502,13 +504,14 @@ void clearData() {
         // matrix.clear();
         // dr_triangle();
         // matrix.show();
-        musicPlayer.playFullFile("/track003.mp3");
-        Serial.println(F("Playing track 003"));
+        // musicPlayer.playFullFile("/track003.mp3");
+        // Serial.println(F("Playing track 003"));
 
+        Serial.println("Case 2 Received");
         body.write(40);
         delay(2000);
         neck.write(0);
-        delay(2000); 
+        delay(2000);
         break;
       case 3:
 
@@ -520,10 +523,7 @@ void clearData() {
       default:
         Serial.println(F("Invalid option"));
     }
-
-
-
   }
-  }  // end of loop()
-  // end of receiver code
-  */
+}  // end of loop()
+// end of receiver code
+*/
