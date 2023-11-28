@@ -1,0 +1,5 @@
+For this day, Andres and I were focusing on making sure that we could transmit signals from the transmitter to the receiver on our robot properly and switch between at least three different states. 
+
+Throughout the entire process, we faced the most difficulty in making each servomotor to turn to different angles in each state. We faced multiple errors and problems such as transmitting errors and just in general none of the servomotors were working according to plan. But after an hour of debugging and figuring out what the problem was, the servomotors were finally able to turn accordingly to the three different states. 
+
+Furthermore, we moved on to making sure that the neopixels work and we were able to create simple shapes in different states but we weren't able to figure out how to make them appear on both of the neopixels, it was only appearing on one of the neopixels that was connected to the Arduino Mega. 
