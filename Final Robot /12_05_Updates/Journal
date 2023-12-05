@@ -1,0 +1,7 @@
+For this day, Andres and I focused on making sure that everything else apart from switching and sending states from the transmitter to the receiver worked, as it was already working based from my session with Shiloh during the holidays, such as the wheels and structural integrity. 
+
+We managed to figure out on our own how to control the speed of the wheels by utilizing the analog and mapping functions to map the values getting from the channels of the remote control for the range from values 0 to 1. 
+
+We also tried to start converting some dialogues within the script into AI generated voices so we could test out whether those files will be played according to the states transmitted. However, we weren't able to do so as I was facing difficulties in trying to find a free online AI text to speech generator as all the ones I found either require a subscription or just doesn't allow it to generate at all because of some VPN issues like Elevenlabs. 
+
+We also filed the screws to make sure that when the servomotors are turning it doesn't make any unnecessary noises. 
