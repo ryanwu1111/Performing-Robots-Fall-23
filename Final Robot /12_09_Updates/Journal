@@ -1,0 +1,9 @@
+For today, Andres and I made several progress on our robot.
+
+Firstly, we worked with Professor Shiloh to fix our neck servomotor problem as it was becoming loose after turning multiple times. We managed to come up with a solution where we would switch to a different hub and screw a small rectangular piece of alumiinium onto it and then glue two pieces of wood between the aluminium and the cardboard head of our robot. By doing this, it would allow the servomotor to turn the entire head of our robot in a more stable manner without loosening it. 
+
+Secondly, we also made more progress on the decoaration of our robot by painting and applying a wider variety of colors onto our robot in order to make it look closer to a pinata. After we're finished with the painting, we also plan on sticking paper strips on to the outside of our robot to make it even closer to a real pinata. 
+
+Thirdly, we have finished recording all of our robot's dialogues with our real voices as we weren't able to find a free online text to speech AI synthesizer. Andres even went to the extent of using Audacity to edit his own voice to make it sound like a real robot, which was amazing. 
+
+Lastly, we have also finished coding the states and cases for each line that our robot will perform, we just have to wait for a day for the paint to dry, put the newly adjusted servomotors together and test out the different states along with the Neopixels and Music Maker shield. 
